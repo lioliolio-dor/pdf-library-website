@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Somewhere Else</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+  <div class="floating-stars">
+    ✦
+    <span>✧</span>
+    <span>✦</span>
+    <span>✧</span>
+  </div>
+
+  <main class="home-content">
+
+    <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+
+    <h1 id="randomTitle">Nothing to see here.</h1>
+
+    <p id="randomMessage">
+      Just a quiet little place.
+    </p>
+
+    <div class="home-decoration">
+      ☾
+    </div>
+
+    <p class="small-text">
+      Perhaps you should stay a little longer.
+    </p>
+
+    <a href="login.html" class="secret-button"
+       aria-label="Secret entrance">
+      ✦
+    </a>
+
+  </main>
+
+  <script>
+    const titles = [
+      "Nothing to see here.",
+      "You found your way.",
+      "A little bit of nowhere.",
+      "Somewhere between dreams.",
+      "The stars are listening."
+    ];
+
+    const messages = [
+      "Just a quiet little place.",
+      "Not everything is meant to be found.",
+      "A secret is waiting somewhere.",
+      "The universe is a little strange.",
+      "Maybe this is where you belong."
+    ];
+
+    const randomIndex =
+      Math.floor(Math.random() * titles.length);
+
+    document.getElementById("randomTitle").textContent =
+      titles[randomIndex];
+
+    document.getElementById("randomMessage").textContent =
+      messages[randomIndex];
+  </script>
+
+</body>
+</html>

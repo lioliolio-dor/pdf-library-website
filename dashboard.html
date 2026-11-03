@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Your Little Library</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+  <header class="dashboard-header">
+
+    <a href="index.html" class="brand">
+      ✦ Somewhere Else
+    </a>
+
+    <button id="logoutButton"
+            class="logout-button">
+      Logout
+    </button>
+
+  </header>
+
+  <main class="dashboard-container">
+
+    <section class="welcome-section">
+
+      <p class="eyebrow">
+        YOUR LITTLE CORNER
+      </p>
+
+      <h1>Your library.</h1>
+
+      <p class="subtitle">
+        A little space for everything you want to keep.
+      </p>
+
+    </section>
+
+    <section class="upload-section">
+
+      <div class="upload-icon">
+        ↑
+      </div>
+
+      <h2>Drop something here.</h2>
+
+      <p>
+        Upload a PDF and keep it safe in your library.
+      </p>
+
+      <label for="pdfInput"
+             class="primary-button upload-label">
+        Choose PDF
+      </label>
+
+      <input
+        type="file"
+        id="pdfInput"
+        accept="application/pdf,.pdf"
+        hidden
+      >
+
+      <p id="uploadMessage" class="message"></p>
+
+    </section>
+
+    <section class="library-section">
+
+      <div class="library-heading">
+
+        <div>
+          <h2>Your PDFs</h2>
+
+          <p class="subtitle">
+            Everything you've kept.
+          </p>
+        </div>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search PDFs..."
+          class="search-input"
+        >
+
+      </div>
+
+      <div id="pdfList" class="pdf-grid">
+
+        <p class="empty-message">
+          Loading your library...
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="dashboard.js"></script>
+
+</body>
+</html>
